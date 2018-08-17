@@ -1,11 +1,10 @@
 /*
  Theme Name:   AITO
- Theme URI:    tba
  Description:  Twenty Seventeen Child Theme for Amnesty International Toronto Organization
  Author:       Stephanie Tran
  Author URI:   https://stephanietran.ca
  Template:     twentyseventeen
- Version:      0.0.1
+ Version:      1.0.0
  License:      GNU General Public License v2 or later
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
  Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
@@ -284,7 +283,7 @@ a .square-button:focus, a .square-button:hover,
 span.square-button:focus,  span.square-button:hover,
 a:focus, a:hover, .square-button:hover, .square-button:focus, .slider-button:focus, .slider-button:hover, .main-navigation li li a:hover  {
   background-color:yellow;
-  color:black;
+  color:black !important;
   transform:none;
 }
 .site-footer a:hover, .widget ul li a:hover, .site-footer .widget-area ul li a:hover, .site-footer .widget-area ul li a:hover,
