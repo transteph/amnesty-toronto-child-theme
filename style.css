@@ -1,0 +1,1252 @@
+/*
+ Theme Name:   AITO
+ Theme URI:    tba
+ Description:  Twenty Seventeen Child Theme for Amnesty International Toronto Organization
+ Author:       Stephanie Tran
+ Author URI:   https://stephanietran.ca
+ Template:     twentyseventeen
+ Version:      0.0.1
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  AITO 
+*/
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:700');
+@font-face {
+  font-family: 'Amnesty Trade Gothic Bold';
+  src: url(fonts/amnesty-trade-gothic-bold-cn-no20-59487db3eadbb.ttf);
+}
+@font-face {
+  font-family: 'Amnesty Trade Gothic';
+  src: url(fonts/amnesty-trade-gothic.ttf);
+}
+html, body {
+  font-family: 'Amnesty Trade Gothic',sans-serif;
+  font-size: 1.1rem;
+}
+body{
+  color:black;
+}
+ul, ol {
+  margin: 0 0 0.3em 2em;
+  padding: 0;
+}
+body:not(.page-id-835) h1, 
+body:not(.page-id-835) h2,
+body:not(.page-id-835) h3,
+body:not(.page-id-835) h4,
+main:not(main#vfhr) h1, main:not(main#vfhr) h2, main:not(main#vfhr) h3, main:not(main#vfhr) h4, main:not(main#vfhr) h5, main:not(main#vfhr) h6, div#n2-ss-2 .n2-ss-layer .n2-font-1150cba2b5473d6862c121368cb9ebff-hover, div#n2-ss-2 .n2-font-4f4b2e67093c2d5b423050fb1245d752-link a, strong {
+  font-weight: 400;
+  font-family: 'Amnesty Trade Gothic Bold', HelveticaNeue-CondensedBold, "Franklin Gothic Medium", sans-serif !important;
+  -webkit-font-feature-settings: 'kern';
+  font-feature-settings: 'kern';
+  -webkit-font-kerning: normal;
+  font-kerning: normal;
+  line-height: 1.1;
+}
+strong{
+  font-size:110%;
+}
+.site-content{
+  padding: 0em;
+}
+.navigation-top{
+  top: 0;
+  width: 100%;
+  height: 60px;
+  z-index: 4444;
+  position: fixed;
+}
+main:not(main#vfhr){
+  padding:2em 0em;
+}
+
+div#n2-ss-2 .n2-font-4f4b2e67093c2d5b423050fb1245d752-link a {
+  font-weight: normal !important;
+}
+.inline-block{
+  display:inline-block;
+}
+/*  Remove box shadow */
+
+.entry-content a, .entry-summary a, .comment-content a, .widget a, .site-footer .widget-area a, .posts-navigation a, .widget_authors a strong {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+a, .square-button, .slider-button {
+  letter-spacing: .28px;
+  letter-spacing: .02rem;
+  font-weight: 400;
+  font-family: 'Amnesty Trade Gothic Bold', HelveticaNeue-CondensedBold, "Franklin Gothic Medium", sans-serif;
+  -webkit-font-feature-settings: 'kern';
+  font-feature-settings: 'kern';
+  -webkit-font-kerning: normal;
+  font-kerning: normal;
+  text-decoration: none;
+  -webkit-transition: background-color .25s, color .25s;
+  transition: background-color .25s, color .25s;
+  text-align: left;
+  line-height: 1;
+}
+
+.square-button {
+  padding: 7px;
+  border: black solid 1px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.navigation-top a {
+  font-weight: 400;
+  font-size: 14px;
+  font-size: 0.9rem;
+  padding: 0.5rem;
+  text-transform: uppercase;
+}
+h2.widget-title{
+  font-weight:400;
+}
+#tribe-events-content table.tribe-events-calendar {
+  width: 100%;
+  display: table;
+margin: 0 auto;
+}
+.tribe-events-calendar thead th{
+  font-weight:400;
+}
+div.tribe-events-month{
+  text-align: center;
+}
+h2.tribe-events-page-title {
+  text-transform: uppercase;
+  background-color: black;
+  color: white;
+  display: inline-block;
+  padding: 5px 10px;
+}
+
+.page .panel-content .entry-title, .page-title, body.page:not(.twentyseventeen-front-page) .entry-title {
+  font-weight: 400;
+}
+
+.js .main-navigation ul, .js .main-navigation ul ul, .js .main-navigation>div>ul {
+  text-align: right;
+}
+
+.navigation-top .wrap {
+  padding: 0.75em 0em;
+}
+
+#nav-logo {
+  display:none;
+}
+
+div.wpforms-container-full .wpforms-form button[type="submit"] {
+  text-transform: uppercase;
+}
+
+
+/* hide down nav arrow */
+
+.site-header .navigation-top .menu-scroll-down {
+  color: #767676;
+  top: 0.7em;
+  display: none;
+}
+
+/* hide front-page header text */
+
+.site-branding {
+  display: none;
+}
+
+.twentyseventeen-front-page .panel-content .entry-title, .page-title {
+  font-weight: 400;
+  display: none;
+}
+
+.heading--tape {
+  font-size: 28px;
+  font-size: 2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: 'Amnesty Trade Gothic Bold', HelveticaNeue-CondensedBold, "Franklin Gothic Medium", sans-serif;
+  -webkit-font-feature-settings: 'kern';
+  font-feature-settings: 'kern';
+  -webkit-font-kerning: normal;
+  font-kerning: normal;
+  line-height: 1.1;
+  background-color: #fff;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  -webkit-box-shadow: .71429rem 0 0 #fff, -.71429rem 0 0 #fff;
+  box-shadow: .71429rem 0 0 #fff, -.71429rem 0 0 #fff;
+  display: inline;
+  position: relative;
+  line-height: 2.15;
+  padding: 10px 0;
+  padding: .71429rem 0;
+}
+/* Hover effects  */
+.entry-content a,
+.entry-summary a,
+.comment-content a,
+.widget a,
+.site-footer .widget-area a,
+.posts-navigation a,
+.widget_authors a strong,
+.entry-title a,
+.entry-meta a,
+.page-links a,
+.page-links a .page-number,
+.entry-footer a,
+.entry-footer .cat-links a,
+.entry-footer .tags-links a,
+.edit-link a,
+.post-navigation a,
+.logged-in-as a,
+.comment-navigation a,
+.comment-metadata a,
+.comment-metadata a.comment-edit-link,
+.comment-reply-link,
+a .nav-title,
+.pagination a,
+.comments-pagination a,
+.site-info a,
+.widget .widget-title a,
+.widget ul li a,
+a .square-button, .elementor a,
+.entry-title a, .entry-meta a, .page-links a, .page-links a .page-number, .entry-footer a, .entry-footer .cat-links a, .entry-footer .tags-links a, .edit-link a, .post-navigation a, .logged-in-as a, .comment-navigation a, .comment-metadata a, .comment-metadata a.comment-edit-link, .comment-reply-link, a .nav-title, .pagination a, .comments-pagination a, .site-info a, .widget .widget-title a, .widget ul li a, .site-footer .widget-area ul li a,  span.square-button {
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 0px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  transition: transform 0.3s ease-in;
+  display: inline-block;
+}
+
+.entry-content a:focus,
+.entry-content a:hover,
+.entry-summary a:focus,
+.entry-summary a:hover,
+.comment-content a:focus,
+.comment-content a:hover,
+.widget a:focus,
+.widget a:hover,
+.posts-navigation a:focus,
+.posts-navigation a:hover,
+.comment-metadata a:focus,
+.comment-metadata a:hover,
+.comment-metadata a.comment-edit-link:focus,
+.comment-metadata a.comment-edit-link:hover,
+.comment-reply-link:focus,
+.comment-reply-link:hover,
+.widget_authors a:focus strong,
+.widget_authors a:hover strong,
+.entry-title a:focus,
+.entry-title a:hover,
+.entry-meta a:focus,
+.entry-meta a:hover,
+.page-links a:focus .page-number,
+.page-links a:hover .page-number,
+.entry-footer a:focus,
+.entry-footer a:hover,
+.entry-footer .cat-links a:focus,
+.entry-footer .cat-links a:hover,
+.entry-footer .tags-links a:focus,
+.entry-footer .tags-links a:hover,
+.post-navigation a:focus,
+.post-navigation a:hover,
+.pagination a:not(.prev):not(.next):focus,
+.pagination a:not(.prev):not(.next):hover,
+.comments-pagination a:not(.prev):not(.next):focus,
+.comments-pagination a:not(.prev):not(.next):hover,
+.logged-in-as a:focus,
+.logged-in-as a:hover,
+a:focus .nav-title,
+a:hover .nav-title,
+.edit-link a:focus,
+.edit-link a:hover,
+.site-info a:focus,
+.site-info a:hover,
+.widget .widget-title a:focus,
+.widget .widget-title a:hover,
+.widget ul li a:focus,
+.widget ul li a:hover,
+.main-navigation a:hover,.social-navigation a:hover,
+.social-navigation a:focus,
+a .square-button:focus, a .square-button:hover,
+.elementor a:focus, .elementor a:hover,
+span.square-button:focus,  span.square-button:hover,
+a:focus, a:hover, .square-button:hover, .square-button:focus, .slider-button:focus, .slider-button:hover, .main-navigation li li a:hover  {
+  background-color:yellow;
+  color:black;
+  transform:none;
+}
+.site-footer a:hover, .widget ul li a:hover, .site-footer .widget-area ul li a:hover, .site-footer .widget-area ul li a:hover,
+.site-footer .widget-area a:focus,
+.site-footer .widget-area a:hover{
+  background-color:yellow;
+  color:black;
+  transform:none;
+  padding-right:10px;
+}
+body.twentyseventeen-front-page .elementor-widget-premium-img-gallery .pa-gallery-icons-wrapper .pa-gallery-icons-inner-container a:hover, body.twentyseventeen-front-page .elementor-widget-premium-img-gallery .pa-gallery-icons-wrapper .pa-gallery-icons-inner-container a:focus,
+a:hover>img, a#nav-logo:hover,
+.elementor-image a:hover{
+  background:none;
+  text-decoration: none;
+  border-bottom:none;
+  box-shadow:none;
+}
+input, select, textarea {
+  font-size: 16px;
+  font-size: 0.7rem;
+  line-height: 1.5;
+}
+.search-form .search-submit {
+  font-size: 0.8em;
+}
+
+/* FRONT PAGE  / HOME PAGE */
+
+/* Slider font */
+#n2-ss-2 h1.n2-ow, #n2-ss-2 h2.n2-ow, #n2-ss-2 h3.n2-ow, #n2-ss-2 h4.n2-ow, #n2-ss-2 h5.n2-ow, #n2-ss-2 h6.n2-ow, #n2-ss-2 p.n2-ow, #n2-ss-2 .n2-ow-all h1, #n2-ss-2 .n2-ow-all h2, #n2-ss-2 .n2-ow-all h3, #n2-ss-2 .n2-ow-all h4, #n2-ss-2 .n2-ow-all h5, #n2-ss-2 .n2-ow-all h6, #n2-ss-2 .n2-ow-all p,div#n2-ss-2 .n2-ss-layer .n2-font-d2a32345ad8aade03ed2e3fdb876d9a8-hover,
+div#n2-ss-2 .n2-ss-layer .n2-font-63e55b07b369f80761636345ed230d4e-hover,
+div#n2-ss-2 .n2-font-73f2f54b60762411f2b6c51b6f3187b1-link a,
+div#n2-ss-2 .n2-ss-layer .n2-font-a895fba0898407d84e99a272097f3254-hover,
+div#n2-ss-2 .n2-ss-button-container a div {
+  font-family: 'Amnesty Trade Gothic Bold', HelveticaNeue-CondensedBold, "Franklin Gothic Medium", sans-serif !important;
+}
+
+.twentyseventeen-front-page .post-66 .wrap {
+  max-width: 100%;
+  padding: 0px;
+}
+
+.twentyseventeen-front-page.page-one-column .entry-header {
+  display: none;
+}
+
+.twentyseventeen-front-page article:not(.has-post-thumbnail):not(:first-child) {
+  border-top: none;
+}
+
+.twentyseventeen-front-page .panel-content .wrap {
+  padding-bottom: 0em;
+  padding-top: 0em;
+}
+
+/* Take Action Front page */
+
+.elementor-274 .elementor-element.elementor-element-40ced24 .premium-gallery-img-name::after {
+  content: '\A';
+  white-space: pre;
+}
+
+.elementor-274 .elementor-element.elementor-element-40ced24 .premium-gallery-img-name {
+  font-family: 'Amnesty Trade Gothic Bold', HelveticaNeue-CondensedBold, "Franklin Gothic Medium", sans-serif;
+  color: #ffffff;
+  background-color: black;
+  display: inline-block;
+  padding: 7px 10px;
+  text-transform: uppercase;
+}
+
+.elementor-274 .elementor-element.elementor-element-40ced24 .premium-gallery-img-desc {
+  font-family: 'Amnesty Trade Gothic Bold', HelveticaNeue-CondensedBold, "Franklin Gothic Medium", sans-serif;
+  color: #000000;
+  background-color: white;
+  padding: 7px 10px;
+  display: block;
+}
+.premium-gallery-item  .pa-gallery-img-container  img{
+  width:100%;
+}
+
+
+
+/* Front page - event listing */
+body.twentyseventeen-front-page ol.tribe-list-widget {
+column-count: 1;
+-webkit-column-gap: 0px;
+column-gap: 0px;
+background-color: transparent !important;
+opacity: 1;
+overflow: hidden;
+position: relative;
+}
+
+.home .tribe-list-widget {
+  text-align: center;
+}
+
+.home .tribe-event-title {
+  padding: 10px 10px 5px 0px;
+  margin: 0px;
+}
+
+body.twentyseventeen-front-page .tribe-events-event-image  img {
+  box-shadow: none!important;
+  
+}
+body.twentyseventeen-front-page .tribe-events-event-image{
+  display:none;
+}
+
+body.twentyseventeen-front-page .type-tribe_events {
+  display: inline-block;
+  width: 95%;
+  margin-right: 5px;
+  border: none;
+  background-color: white;
+  text-align: left;
+  vertical-align: top;
+  margin-bottom: 20px;
+  border: 1px solid black;
+  overflow: hidden;
+}
+
+body.twentyseventeen-front-page .tribe-events-widget-link {
+  display: none;
+}
+
+body.twentyseventeen-front-page .tribe-event-duration {
+  padding: 0px 5px 10px 10px;
+}
+
+body.twentyseventeen-front-page .event-venue {
+ display:none;
+}
+
+body.twentyseventeen-front-page .tribe-event-title, .tribe-event-title a {
+  text-transform: none;
+  font-size: 110%;
+  display:inline-block;
+  
+}
+.tribe-event-title a{
+  padding: 5px 5px 5px 10px;
+}
+
+body.twentyseventeen-front-page .event-details-link {
+  margin: 0px;
+  display: inline-block;
+  padding: 5px;
+  border: 1px solid black;
+  margin: 0px 5px 10px 10px;
+}
+
+body.twentyseventeen-front-page .entry-content a img{
+  border:none;
+  box-shadow: none;
+}
+
+
+/* TAKE ACTION - HOMEPAGE */
+.elementor-274 .elementor-element.elementor-element-40ced24 .premium-gallery-container .premium-gallery-item{
+  width:100%;
+}
+
+body.twentyseventeen-front-page .elementor-widget-premium-img-gallery .pa-gallery-icons-wrapper, 
+body.twentyseventeen-front-page .elementor-widget-premium-img-gallery .pa-gallery-icons-wrapper .pa-gallery-icons-inner-container,
+body.twentyseventeen-front-page .elementor-widget-premium-img-gallery .pa-gallery-icons-wrapper .pa-gallery-icons-inner-container a{
+  width:100%;
+  height:100%;
+}
+.pa-gallery-img.style1 .pa-gallery-icons-inner-container, .pa-gallery-img.default .pa-gallery-icons-inner-container{
+  position:relative;
+  top:0;
+  -webkit-transform: none;
+  transform: none;
+}
+
+.pa-gallery-icons-inner-container a{
+  position: absolute;
+  z-index: 100;
+  left: 0;
+}
+.pa-gallery-img-container {
+  max-height: 150px;
+  margin-top: 15px;
+  border-left: 40px solid white;
+  border-right: 40px solid white;
+}
+
+.elementor-274 .elementor-element.elementor-element-40ced24 .premium-gallery-img-desc {
+  display: inline-block;
+}
+
+/*  FOOTER  */
+
+
+.site-footer {
+  background-color: #252525;
+  color: white;
+  margin-top: 0px;
+  border: none;
+  z-index: 15;
+  position: relative;
+}
+
+.site-footer .widget-area {
+  padding-bottom: 0px;
+}
+
+.site-footer a, .widget ul li a, .site-footer .widget-area ul li a, .site-footer .widget-area ul li a {
+  color: white;
+  text-decoration: none;
+  box-shadow: none;
+  padding:2px;
+  transition: 0.3s ease-in;
+  
+}
+
+.footer-widget-1 h2.widget-title {
+  color: white;
+  font-size: 160%;
+  text-transform: capitalize;
+}
+
+.site-footer .widget-area .menu-social-links-container li a {
+  background-color: white;
+  color: #252525;
+  text-decoration: none;
+}
+
+.footer-widget-2 .widget ul li, .widget ol li {
+  border: none;
+  display: block;
+}
+
+.menu-footer2 li a {
+  position: relative;
+}
+
+.fa-external-link-alt::after {
+  content: " \f35d";
+  color: #ffff00;
+}
+
+.fa-external-link-alt::before {
+  content: "";
+}
+
+footer #reg-info {
+  font-size: 90%;
+  text-align: left;
+}
+
+.social-navigation {
+  clear: both;
+  float: none;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+/* Pages  */
+.single-post .entry-title{
+  display: none;
+}
+body.page:not(.twentyseventeen-front-page) .entry-title, .page .entry-title {
+  color: white;
+  display: block;
+  position: absolute;
+  top: -14vh;
+  text-align: center;
+  width: 100%;
+  left: 0px;
+  font-size:200%;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 10px black;
+}
+
+.page.page-one-column .entry-header, .twentyseventeen-front-page.page-one-column .entry-header, .archive.page-one-column:not(.has-sidebar) .page-header {
+  margin-bottom: 0em;
+}
+
+.single-featured-image-header {
+  background-color: #fafafa;
+  border-bottom: 1px solid #eee;
+  max-height: 400px;
+  min-height:200px;
+}
+
+.page:not(.home) #content {
+  padding-bottom: 0px;
+}
+.single-featured-image-header img {
+
+  display: block;
+  margin: auto;
+  width: 100%;
+}
+
+/*    --- VOLUNTEER FORM ---    */
+div#form-container,iframe#volunteer-form{
+  height:300vh;
+  width:80vw;
+  margin-bottom:50px;
+}
+iframe#volunteer-form{
+  border:3px solid black;
+}
+
+
+/* Volunteer page boxes (Mobile) */
+.page-id-835 .elementor img.premium-testimonial-person-image,
+.wrap.vhr .elementor img.premium-testimonial-person-image{
+  display:none !important;
+}
+.volunteer-box{
+  background-color:white; 
+  padding: 10px;
+  width:90%;
+  margin-left: 5%;
+  margin-top: 10px;
+}
+
+
+
+body.single-tribe_events  .tribe-events-event-image{
+  display:none;
+}
+#tribe-events-pg-template, .tribe-events-pg-template {
+  width: 80%;
+}
+
+.single-tribe_events .tribe-events-single-event-title{
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+.tribe-events-schedule h2{
+  display: inline-block;
+  margin-bottom: 0;
+  font-size: 1.2em;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  background-color: yellow;
+  padding:7px !important;
+  color: black;
+}
+#tribe-events-content .tribe-events-nav-previous > a, 
+#tribe-events-content .tribe-events-nav-next a{
+  color:rgb(44, 44, 44);
+  font-weight: 300;
+  font-size: 90%;
+  line-height: 2.5;
+}
+
+.tribe-events-footer .tribe-events-sub-nav{
+  display:block;
+}
+
+.tribe-events-sub-nav li a{
+  background: rgb(212, 212, 212);
+  padding:10px;
+}
+
+#tribe-events-header .tribe-events-sub-nav{
+  display:none;
+}
+
+
+/* Events calendar page */
+#tribe-bar-form .tribe-bar-submit input[type="submit"],
+ .tribe-events-event-meta a,.tribe-events-month-event-title,
+ .tribe-events-month-event-title a,
+ #tribe-events-content .tribe-events-calendar div[id*="tribe-events-event-"] h3.tribe-events-month-event-title{
+  color: black !important;
+  text-transform: none;
+  
+}
+#tribe-events-content .tribe-events-calendar div[id*="tribe-events-event-"] h3.tribe-events-month-event-title{
+  font-size: 150%;
+}
+.tribe-events-button, #tribe-events .tribe-events-button{
+  color:black;
+}
+.events-gridview #tribe-events-pg-template, .tribe-events-pg-template{
+  width:90%;
+}
+.tribe-events-calendar thead th, .tribe-events-calendar th {
+  color:white !important;
+}
+/* Elementor Toggle */
+.elementor-toggle .elementor-tab-title{
+  transition: 0.3s ease-in;
+}
+.elementor-toggle .elementor-tab-title.elementor-active {
+  border-bottom: none;
+  background-color: yellow;
+}
+
+body.page:not(.twentyseventeen-front-page) #tribe-events-content .tribe-events-list-event-title a.tribe-event-url,
+.tribe-events-list-event-title, .tribe-event-url{
+  color:white !important;
+  background-color:black;
+  padding:10px;
+}
+.tribe-events-loop .tribe-events-event-meta {
+  font-size: 17px;
+}
+#tribe-events-content a, .tribe-events-event-meta a{
+  color:rgb(22, 22, 22);
+}
+body.single-tribe_events .single-featured-image-header{
+  display:none;
+}
+
+.tribe-events-notices {
+  background: #d9edf7;
+  border-radius: 4px;
+  border: 1px solid #bce8f1;
+  color: #162127;
+  margin: 10px 0 18px;
+  padding: 8px 35px 8px 14px;
+  text-shadow: 0 1px 0 #fff;
+}
+
+/* VOICE FOR HUMAN RIGHTS  */
+.amnesty-button{
+  background-color:yellow;
+  box-shadow: 0px 0px 10px grey;
+  font-family: 'Amnesty Trade Gothic',sans-serif;
+  padding: 1% 6%;
+  color: black;
+  border-radius: 7px;
+  font-size: 24pt;
+  font-weight: bold;
+}
+.alm-reveal li{
+  list-style: none !important;
+}
+#white-box{
+  width:100%;
+  height:80px;
+  background-color:white;
+  position: relative;
+}
+div#vhr-header{
+  position: relative;
+  width:100%;
+  min-height: 350px;
+  overflow:hidden;
+}
+.wrap.vhr, 
+  div#vhr-header{
+    background-color: white;
+  }
+  .wrap.vhr {
+    max-width: none;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+.wrap.vhr div#primary {
+  width: 100%;
+  background-color:white;
+  z-index: 10;
+  display: block;
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  float: none;   
+  padding: 0px;
+}
+.wrap.vhr .premium-testimonial-content-wrapper {
+  padding: 0px !important;
+}
+.wrap.vhr .premium-testimonial-text-wrapper {
+  margin: 0% !important;
+}
+h1#vol-heading  {
+  font-family: 'Amnesty Trade Gothic Bold', HelveticaNeue-CondensedBold, "Franklin Gothic Medium", sans-serif !important;
+  font-size: 450%;
+  font-weight: 600;
+  position: fixed;
+  transform: rotate(-10deg);
+  top: 8%;
+  left: 5vw;
+  color: white;
+  -webkit-text-stroke: 1.2px black;
+  width: 100%;
+  line-height: 0.9;
+  max-width: 900px;
+  padding: 10px 30px;
+}
+h1#vol-heading:after{
+  content:"VOICES FOR HUMAN RIGHTS";
+  position: absolute;
+  left: 7px;
+  top: 8px;
+  background-image: -webkit-linear-gradient(left top, lightgrey 0%, lightgrey 25%, #555 25%, #555 50%, transparent 50%, transparent 75%, #555 75%);
+  background-size: 4px 4px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  z-index: -5;
+  display: inline-block;
+  text-shadow: none;
+  width: 100%;
+  padding: 10px 30px;
+}
+
+h1#vol-heading2  {
+  font-family: 'Amnesty Trade Gothic Bold', HelveticaNeue-CondensedBold, "Franklin Gothic Medium", sans-serif !important;
+  font-size: 450%;
+  font-weight: 600;
+  color: white;
+  -webkit-text-stroke: 1.8px black;
+  line-height: 0.9;
+  position: relative;
+  z-index: 2;
+  margin-right: -10px;
+  width: 80%;
+}
+body.single-post .vhr h2{
+  font-size: 3em !important;
+  margin-bottom: 0px;
+}
+body.single-post .vhr span.elementor-heading-title{
+  font-size: 1.5em !important;
+}
+
+h1#vol-heading2:after{
+  content:"VOICES FOR HUMAN RIGHTS";
+  position: absolute;
+  left: 7px;
+  top: 8px;
+  background-image: -webkit-linear-gradient(left top, lightgrey 0%, lightgrey 25%, #555 25%, #555 50%, transparent 50%, transparent 75%, #555 75%);
+  background-size: 4px 4px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  z-index: -1;
+  display: inline-block;
+  text-shadow: none;
+}
+
+body.single-post .vhr #secondary{
+  display:none;
+}
+body.single-post .vhr .premium-testimonial-content-wrapper{
+  text-align: left;
+}
+
+
+
+/*  VOICES FOR HUMAN RIGHTS -- POSTS ON PAGE    */
+img.candle{
+  text-align: center;
+margin: 0 auto;
+display: block;
+width: 100px;
+}
+li.vfhr-post h2{
+  text-align: center;
+}
+body.page-id-835 li{
+  list-style: none;
+}
+body.page-id-835 h2.elementor-heading-title,
+body.page-id-835 .elementor-widget-container h5,
+li.vfhr-post h2.elementor-heading-title{
+  display:none;
+}
+.vfhr-post-title{
+  font-family: "Roboto Slab", Sans-serif;
+  font-size: 1em;
+  font-weight: 900;
+}
+
+div.ai-btn-contain{
+  text-align: center;
+  margin-bottom:50px;
+}
+body.page-id-835 .elementor-widget-container ul{
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+padding-bottom: 10em;
+}
+body.page-id-835 .elementor-widget-container ul:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+body.page-id-835 .elementor-widget-container ul li{
+  list-style-type: none;
+  position: relative;
+  float: left;
+  width: 27.85714285714286%;
+  padding: 0 0 32.16760145166612% 0;
+  -o-transform: rotate(-60deg) skewY(30deg);
+  -moz-transform: rotate(-60deg) skewY(30deg);
+  -webkit-transform: rotate(-60deg) skewY(30deg);
+  -ms-transform: rotate(-60deg) skewY(30deg);
+  transform: rotate(-60deg) skewY(30deg);
+  overflow: hidden;
+  visibility: hidden;
+}
+body.page-id-835 .elementor-widget-container ul li:nth-child(2){
+  margin: 0 1%;
+}
+body.page-id-835 .elementor-widget-container ul li:nth-child(3n+2) {
+  margin: 0 1%;
+}
+body.page-id-835 .elementor-widget-container ul li:nth-child(6n+4), body.page-id-835 .elementor-widget-container ul li:nth-child(6n+5), body.page-id-835 .elementor-widget-container ul li:nth-child(6n+6) {
+  margin-top: -6.9285714285%;
+  margin-bottom: -6.9285714285%;
+  -o-transform: translateX(50%) rotate(-60deg) skewY(30deg);
+  -moz-transform: translateX(50%) rotate(-60deg) skewY(30deg);
+  -webkit-transform: translateX(50%) rotate(-60deg) skewY(30deg);
+  -ms-transform: translateX(50%) rotate(-60deg) skewY(30deg);
+  transform: translateX(50%) rotate(-60deg) skewY(30deg);
+}
+body.page-id-835 .elementor-widget-container ul li:nth-child(6n+4),{
+  margin-left: 0.5%;
+}
+body.page-id-835 .elementor-widget-container ul li a{
+  font-size:90%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #555;
+  color: white;
+  text-transform:uppercase;
+  -o-transform: skewY(-30deg) rotate(60deg);
+  -moz-transform: skewY(-30deg) rotate(60deg);
+  -webkit-transform: skewY(-30deg) rotate(60deg);
+  -ms-transform: skewY(-30deg) rotate(60deg);
+  transform: skewY(-30deg) rotate(60deg);
+  overflow: hidden;
+  overflow: hidden;
+  padding: 35% 5% 50% 5%;
+  text-align: center;
+  height: 100%;
+  transition:ease-in 0.2s ;
+  -webkit-transition:ease-in 0.2s ;
+  -moz-transition:ease-in 0.2s ;
+  -ms-transition:ease-in 0.2s ;
+  -o-transition:ease-in 0.2s ;
+  font-weight: 400;
+}
+body.page-id-835 .elementor-widget-container ul li:nth-child(odd) a{
+  background-color: rgb(31, 44, 56);
+  background-image: url("https://www.transparenttextures.com/patterns/diagonal-striped-brick.png");
+color:#fff ;
+}
+body.page-id-835 .elementor-widget-container ul li:nth-child(even) a{
+  background-color: #ffffff;
+  background-image: url("https://www.transparenttextures.com/patterns/diagonal-striped-brick.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+color:#000 ;
+}
+
+body.page-id-835 .elementor-widget-container ul li a:hover{
+  background-color: #ffff00;
+  background-image: url("https://www.transparenttextures.com/patterns/diagonal-striped-brick.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+ color:black;
+}
+
+body.page-id-835 .elementor-widget-container ul li *{
+  visibility: visible;
+}
+/* Posts */
+
+.entry-footer .cat-links {
+  display: none;
+}
+
+/* Post widgets */
+aside#secondary h2.widget-title{
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: 0px;
+  padding: 3px 5px;
+  background-color: black;
+  color: white;
+  display: inline-block;
+}
+aside .tribe-events-event-image{
+  display:none;
+}
+aside .tribe-events-list-widget .tribe-events-list-widget-events{
+  padding:0px;
+}
+aside .tribe-events-list-widget .tribe-event-title{
+  padding:2px 4px;
+  background-color:yellow;
+  display:inline-block;
+}
+.single-tribe_events .tribe-events-event-meta, .tribe-events-tooltip .tribe-events-event-body{
+  font-size:1rem;
+}
+.tribe-events-meta-group .tribe-events-single-section-title{
+  font-weight: 400;
+}
+
+#tribe_events_filters_wrapper input[type="submit"], .tribe-events-button, #tribe-events .tribe-events-button, .tribe-events-button.tribe-inactive, #tribe-events .tribe-events-button:hover, .tribe-events-button:hover, .tribe-events-button.tribe-active:hover, #tribe-events .tribe-events-button, .tribe-events-button {
+  background-color: #fcfc17 !important;
+  font-weight:500;
+}
+
+/* Search results */
+body.search-results  .entry-title{
+  color:black;
+  font-size:120%;
+  transform:none;
+  display:inline-block;
+  position: relative;
+  text-align: left;
+  text-shadow: none;
+}
+body.search-results .page-title{
+  font-size: 150%;
+  transform: none;
+  display: inline-block;
+  color: white;
+  background-color: black;
+  padding: 5px 7px;
+}
+body.search-results .entry-summary{
+  border-bottom: 1px solid grey;
+}
+
+/*--------------------------------------------------------------
+  Media Queries
+--------------------------------------------------------------*/
+
+/* Adjust positioning of edit shortcuts, override style in customize-preview.css */
+
+@media screen and (min-width: 20em) {
+}
+
+@media screen and (min-width: 30em) {
+  .site-navigation-fixed.navigation-top {
+    z-index: 500;
+}
+  body.page:not(.twentyseventeen-front-page) .entry-title, .page .entry-title {
+    color: white;
+    display: block;
+    position: absolute;
+    top: -5%;
+    text-align: center;
+    width: 100%;
+    left: 0px;
+  }
+  
+}
+
+@media screen and (min-width: 48em) {
+
+  body.twentyseventeen-front-page .tribe-events-event-image{
+    float:left;
+    margin-right:5px;
+    width:100%;
+    margin-bottom: -8px;
+    display:block;
+  }  
+  body.twentyseventeen-front-page ol.tribe-list-widget {
+    text-align: center;
+    display: flex;
+flex-wrap: wrap;
+    }
+  body.twentyseventeen-front-page .type-tribe_events {
+    margin-right:1%;
+    margin-left:1%;
+    width:30%;
+  }
+  .navigation-top{
+    width: 100%;
+    height: unset;
+    z-index: 4444;
+    position: relative;
+  }
+
+  #nav-logo {
+    z-index: 200;
+    display: block;
+    position: fixed;
+    height: 70px;
+    overflow: hidden;
+  padding: 0px;
+  margin: 0px;
+  }
+
+  #nav-logo img{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 80%;
+  }
+  .has-sidebar #secondary {
+    float: right;
+    padding-top: 0;
+    width: 30%;
+  }
+  .elementor-274 .elementor-element.elementor-element-40ced24 .premium-gallery-container .premium-gallery-item {
+    width: 33% !important;
+  }
+  .pa-gallery-img-container {
+    max-height: none;
+    margin-bottom:0px;
+    margin-top:0px;
+    border:none;
+  }
+  .elementor-274 .elementor-element.elementor-element-40ced24 .premium-gallery-img-desc {
+    display: block;
+  }
+
+  body.page-id-10 .elementor-10 .elementor-element.elementor-element-3694478.elementor-widget-heading .elementor-heading-title{
+    font-size: 6em;
+  }
+  /* Volunteer page boxes (Desktop) */
+  .volunteer-box{
+    background-color:white; 
+    padding:5% 20% 5% 5%;
+    width: 100%;
+    margin-left: 0;
+  }
+ 
+  .volunteer-box span{
+    padding-top:20px;
+  }
+
+ .volunteer-box.project-box{
+    min-height: 100px;
+    padding: 15% 5%;
+  }
+  .volunteer-box.project-box span{
+    padding-top:0px;
+  }
+  .volunteer-box.project-box .fa{
+    float:right;
+  }
+ 
+  .wrap.vhr {
+    max-width: none;
+    padding-left: 3em;
+    padding-right: 3em;
+}
+body.single-post .vhr .premium-testimonial-content-wrapper {
+  text-align: unset;
+}
+  .has-sidebar .wrap.vhr #secondary{
+    display:none;
+  }
+div#vhr-header{
+  position: relative;
+  width:100%;
+  height: 22vw;
+  min-height: 400px;
+  overflow:hidden;
+}
+h1#vol-heading  {
+  font-size: 92pt;
+  font-weight: 600;
+  position: fixed;
+  transform: rotate(-10deg);
+  top: 9%;
+  left: 20vw;
+  width: 90%;
+  line-height: 0.9;
+  max-width: 900px;
+  padding: 50px 30px;
+}
+  h1#vol-heading:after{
+    content:"VOICES FOR HUMAN RIGHTS";
+    position: absolute;
+    left: 7px;
+    top: 8px;
+    background-image: -webkit-linear-gradient(left top, lightgrey 0%, lightgrey 25%, #555 25%, #555 50%, transparent 50%, transparent 75%, #555 75%);
+    background-size: 4px 4px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: -5;
+    display: inline-block;
+    text-shadow: none;
+    width: 100%;
+    padding: 50px 30px;
+  }
+  .megaphone{
+    position: absolute;
+    top: -220px;
+    left: -160px;
+  }
+  body.page-id-835 .elementor-widget-container ul li a{
+    font-size:250%;
+    padding: 40% 5% 30% 5%;
+  }
+  h1#vol-heading2  {
+    margin-right: 0px;
+    font-size: 850%;
+  }
+  .vfhr-post-title{
+    font-family: "Roboto Slab", Sans-serif;
+  font-size: 80px;
+  font-weight: 900;
+  }
+  .wrap.vhr div#primary {
+    padding: 0px 7px;
+    border:10px solid black;
+  }
+  body.page-id-835 .elementor-widget-container ul li a{
+    font-size:300%;
+  }
+}
+
+@media screen and ( min-width: 67em) {
+  body.page:not(.twentyseventeen-front-page) .entry-title, .page .entry-title {
+    color: white;
+    font-size:400%;
+    transform: translateY(-20%);
+    display: block;
+    position: absolute;
+    top: -7%;
+    text-align: center;
+    width: 100%;
+    left: 0px;
+  }
+  body.page:not(.twentyseventeen-front-page) .single-post .entry-title{
+    display:none;
+  }
+  #tribe-events-pg-template, .tribe-events-pg-template {
+    width: 60%;
+  }
+
+  div#form-container,iframe#volunteer-form{
+    height:240vh;
+    width:70vw;
+    max-width: 900px;
+  }
+  iframe#volunteer-form{
+    border:3px solid black;
+  }
+
+  /* Make footer two columns */
+
+.site-footer .widget-column.footer-widget-1 {
+  float: left;
+  width: 45%;
+}
+
+.site-footer .widget-column.footer-widget-2 {
+  float: right;
+  width: 45%;
+  }
+}
+
+@media screen and ( min-width: 79em) {
+
+}
